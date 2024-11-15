@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Validation form</title>
+</head>
+<body>
+<form id="myform">
+<label for="name">name</label>
+<input type="text" id="name" name="name" required minlength="3">
+<br><br>
+<label for="password">password:</label>
+<input type="password" id="password" name="password" required minlength="8"><br><br>
+<label for="email">Email id:</label>
+<input type="email" id="email" name="email" required><br><br>
+<button type="submit">submit</button>
+</form>
+
+<script>
+document.getElementById(myform).addEventListener("submit",function(event){
+const name=document.getElementById("name").value;
+const password=document.getElementById("password").value;
+const mail=document.getElementById("email").value;
+
+const namePattern=/^[A-Za-z\s]+$/;
+const passwordPattern=/^(?=.[A-Za-z])(?.=*\d)[A-Za-z\d]{8,}$/;
+const mailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!namePattern.test(name)){
+  alert("name can only contain letters and space");
+  
+}
+if(!passwordPattern.test(password)){
+    alert("password must contain atleast one letter and one number");
+    event.preventDefault();
+}
+if(!mailPattern.test(email)){
+    alert("please enter the vaild mail id");
+    event.preventDefault();
+}
+});
+</script>
+</body>
+</html>

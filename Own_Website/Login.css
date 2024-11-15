@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: darkblue;
+    border-color: brown;
+}
+h1{
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+}
+p{
+   color: white;
+   font-size:larger ;
+}
+input{
+    color: aliceblue;
+    border-radius: 10pc;
+    
+}
+input[type="button"]{
+    color: black;
+    border-radius: 10pc;
+    font: black;
+}
+a{
+    color: gold;
+    font-size: large;
+
+}

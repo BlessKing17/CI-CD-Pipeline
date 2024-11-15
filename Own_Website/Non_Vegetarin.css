@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+}
+.res{
+    background-color:lightsalmon;
+    border: #f5ad05;
+}
+img{
+    float: right;
+    height: 200px;
+    width: 200px;
+}
+p{
+    color:blueviolet;
+    font-size:large ;
+}
+h1{
+    color: red;
+    text-align: center;
+    font-size:xx-large;
+}
